@@ -12,13 +12,14 @@ import Contact from './components/Contact'
 function App() {
   return (
     <ChakraProvider>
-      <Header />
+      
       <Router>
+      <Header />
         <Routes>
-          <Route exact path='/react-port-pt-2' element={<Home />}></Route>
-          <Route exact path='/about' element={<AboutMe />}></Route>
-          <Route exact path='/projects' element={<Projects />}></Route>
-          <Route exact path='/contact' element={<Contact />}></Route>
+          <Route path='/react-port-pt-2' element={<Home />}></Route>
+          <Route path='/react-port-pt-2/about' element={<AboutMe />}></Route>
+          <Route path='/react-port-pt-2/projects' element={<Projects />}></Route>
+          <Route path='/react-port-pt-2/contact' element={<Contact />}></Route>
         </Routes>
       </Router>
       <Footer />

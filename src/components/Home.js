@@ -2,6 +2,7 @@ import {
     Flex,
     Box,
     Button,
+    Link
   } from '@chakra-ui/react'
   import MyPDF from '../pdf/QuentinHnilica.pdf'
 
@@ -12,12 +13,12 @@ function Home (){
             <a href={MyPDF}>
             <Button m='1'>View My Resume</Button>
             </a>
-            <a href="/about">
+            <Link href="/react-port-pt-2/about">
             <Button m='1'>Learn More About Me</Button>
-            </a>
-            <a href="/projects">
+            </Link>
+            <Link href="/react-port-pt-2/projects">
             <Button m='1'>View My Projects</Button>
-            </a>
+            </Link>
             </Box>
         </Flex>
     )
